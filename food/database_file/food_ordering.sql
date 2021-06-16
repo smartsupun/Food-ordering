@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2021 at 07:50 AM
+-- Generation Time: Jun 16, 2021 at 05:19 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -90,12 +90,14 @@ CREATE TABLE `oders` (
 
 CREATE TABLE `users` (
   `userId` int(255) NOT NULL,
-  `UserName` varchar(1000) NOT NULL,
+  `name` varchar(1000) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(1000) NOT NULL,
   `address` varchar(1000) NOT NULL,
   `telephone` varchar(10) NOT NULL,
   `account` varchar(20) NOT NULL,
-  `account balance` decimal(20,0) NOT NULL
+  `account balance` decimal(20,0) NOT NULL,
+  `answer` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
