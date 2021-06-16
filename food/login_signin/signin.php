@@ -23,7 +23,10 @@
 <body>
     <div class="login container-fluid">
         <div class="login-wrapper row">
-            <div class="col-md-6 wow fadeInUp">
+        <div class="col-md-6 wow fadeInLeft login-image-div"><img
+                    src="./images/pngfind.com-pizzaiolo-png-3304643.png" class="floating-animate login-image"
+                    alt="" style="width: 500px;" srcset=""></div>
+            <div class="col-md-6 wow zoomIn form-signin">
                 <form class="login-form jumbotron" id="login-form">
                     <div class="login-heading">
                         <h4>Sign In</h4>
@@ -60,11 +63,8 @@
                     </div>
                 </form>
             </div>
-            <!-- <div class="col-md-2"></div> -->
-            <div class="col-md-6 wow zoomIn login-image-div"><img
-                    src="./images/Illustration-social-media-cartoon-flat-closeup-big-smartphone-Clipart-PNG.png" class="floating-animate login-image"
-                    alt="" style="width: 600px;" srcset=""></div>
         </div>
+        
     </div>
 
 

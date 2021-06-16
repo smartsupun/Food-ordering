@@ -46,7 +46,7 @@
                         </span>
                     </div>
                     <div class="login-forgot-password">
-                        <a href="" >
+                        <a href="" style="color: #d35f17;">
                         forgot password?
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                 </form>
             </div>
             
-            <div class="col-md-6 wow fadeInDown login-image-div"><img  src="./images/—Pngtree—internet social likes_5318324(copy).png" class="floating-animate login-image" alt="" style="width: 600px;" srcset=""></div>
+            <div class="col-md-6 wow fadeInDown login-image-div"><img  src="./images/login.png" class="floating-animate login-image" alt="" style="width: 600px;" srcset=""></div>
         </div>
     </div>
     

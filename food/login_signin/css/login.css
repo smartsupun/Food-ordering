@@ -24,7 +24,7 @@ body {
     border-radius: 50px;
 }
 .login-heading{
-    background-color: #4849a1;
+    background:  linear-gradient(to right, #d34b15, #e47419)  ;
     color: white;
     border-radius: 50px;
     padding: 10px;
@@ -58,14 +58,14 @@ body {
 }
 #login-submit:hover{
     
-    background-color: #30316d;
+    background-color: #d35f17;
 }
 #login-signin:hover{
 
     background-color: #dbdbdf;
 }
 #login-submit{
-    background-color: #4849a1;
+    background-color: #E56717;
     border-radius: 50px;
     border: 0px;
     padding: 15px;
@@ -73,7 +73,7 @@ body {
 }
 #login-signin{
     background-color: #f4f4fa;
-    color: #4849a1;
+    color: #E56717;
     border-radius: 50px;
     border: 0px;
     box-shadow: 2px 2px 2px;
