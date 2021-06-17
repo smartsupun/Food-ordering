@@ -17,4 +17,8 @@ $(document).ready(function(){
 
     });
 
+    $('#btn_btn').click(()=>{
+        alert('Hey');
+    })
+
 });

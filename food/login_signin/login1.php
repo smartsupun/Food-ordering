@@ -1,3 +1,40 @@
+<?php 
+
+session_start();
+
+if(isset($_POST['login'])){
+    userLogin();
+}
+
+$response;
+
+function userLogin(){
+   global $response;
+   require_once('../database.php');
+   if($_POST['email'] != '' && $_POST['password'] != ''){
+       
+       $emailHashed = md5($_POST['email']);
+       $passwordHashed = md5($_POST['password']);
+
+       $query = "SELECT * FROM users WHERE email='$emailHashed'";
+       $row = mysqli_query($database,$query);
+       $userDetails = mysqli_fetch_all($row);
+       
+       if(count($userDetails) !=0)
+          if($userDetails[0][2] == $passwordHashed){
+             $response = "Logged";
+          }else{
+             $response = "Invalid Password";
+          }
+        else{
+            $response = "Invalid Email";
+        }
+    }else{
+       $response = "Every Feild Must filled";
+   }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,18 +63,19 @@
 <body>
     <div class="login container-fluid">
         <div class="login-wrapper row">
-            <div class="col-md-6 wow fadeInUp">
-                <form class="login-form jumbotron" id="login-form">
+            
+            <div class="col-md-6 col-sm-12 wow fadeInUp">
+                <form class="login-form jumbotron" method="post" action="login1.php" id="login-form">
                     <div class="login-heading">
                         <h4>Log In</h4>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" name="email" required class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Enter email">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="input-group mb-3"  >
-                        <input type="password" class="form-control" placeholder="Password"
+                        <input type="password" name="password" required class="form-control" placeholder="Password"
                         id="login-password">
 
                         <span class="input-group-text" id="login-show-password">
@@ -45,20 +83,33 @@
                         <i class="fas fa-eye" style="display: none;" id="login-eye"></i>
                         </span>
                     </div>
+                    <div>
+                     <?php 
+                        if(isset($response)){
+                            echo "<h6 style='color:red;text-align:center'>$response</h6>";
+                        }else{
+                            echo "<h6 style='text-align:center'>Get your taste</h6>";
+                        }
+                     ?>
+                    </div>
                     <div class="login-forgot-password">
-                        <a href="" style="color: #d35f17;">
+                        <a href="passwordreset.php" style="color: #d35f17;">
                         forgot password?
                         </a>
                     </div>
                     
                     <div class="login-btns">
-                        <button type="submit" id="login-submit" class="btn btn-primary">Submit</button>
+                        <input type="submit"  id="login-submit" class="btn btn-primary" title="Submit" name="login" />
                         <a href="signin.php" id="login-signin" class="btn btn-primary">Sign In</a>
                     </div>
                 </form>
             </div>
             
-            <div class="col-md-6 wow fadeInDown login-image-div"><img  src="./images/login.png" class="floating-animate login-image" alt="" style="width: 600px;" srcset=""></div>
+            <div class="col-md-6 col-sm-0 wow fadeInDown login-image-div">
+                <img  src="./images/login.png" class="floating-animate login-image" alt="" style="width: 600px;" srcset="">
+            </div>
+        
+        
         </div>
     </div>
     
