@@ -50,7 +50,7 @@ function userLogin(){
 
         <script src="https:ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script src="js/signin.js"></script>
+    <script src="js/signin-login.js"></script>
 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/mobster.css">
@@ -102,6 +102,8 @@ function userLogin(){
                         <input type="submit"  id="login-submit" class="btn btn-primary" title="Submit" name="login" />
                         <a href="signin.php" id="login-signin" class="btn btn-primary">Sign In</a>
                     </div>
+
+                    
                 </form>
             </div>
             

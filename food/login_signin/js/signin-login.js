@@ -17,8 +17,13 @@ $(document).ready(function(){
 
     });
 
+<<<<<<< HEAD:food/login_signin/js/signin.js
     $('#btn_btn').click(()=>{
         alert('Hey');
     })
 
 });
+=======
+});
+
+>>>>>>> 87ea621d35a24aaf092bd31379e48f5ae20c7e74:food/login_signin/js/signin-login.js
