@@ -22,6 +22,7 @@ function userLogin(){
        
        if(count($userDetails) !=0)
           if($userDetails[0][2] == $passwordHashed){
+              //in here need to add user details to session
              $response = "Logged";
           }else{
              $response = "Invalid Password";

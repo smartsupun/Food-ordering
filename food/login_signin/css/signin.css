@@ -11,19 +11,6 @@ body {
   background: url(../images/hero_mini.svg) no-repeat;
   background-size: cover;
   width: 100% ;
-<<<<<<< HEAD
-}
-.signin-form {
-  width: 70%;
-background-color: rgb(238, 237, 237);
-
-
-}
-
-.signin-image-div{ 
-  width:80%;
-}
-=======
   height: 700px;
 
 }
@@ -35,19 +22,15 @@ background-color: rgb(238, 237, 237);
 .signin-image-div{ 
   width:80%;
 }
->>>>>>> 87ea621d35a24aaf092bd31379e48f5ae20c7e74
 #signin-form {
   border-radius: 50px;
   margin: auto;
 
 }
-<<<<<<< HEAD
-=======
 .signin-form-div{
   margin-top: 5%;
 
 }
->>>>>>> 87ea621d35a24aaf092bd31379e48f5ae20c7e74
 .signin-heading {
   background:  linear-gradient(to right, #d34b15, #e47419);
   color: white;
@@ -58,16 +41,10 @@ background-color: rgb(238, 237, 237);
 }
 #signin-input {
   border-radius: 50px;
-<<<<<<< HEAD
-  /* margin-top: 5px; */
-  /* padding: 10px; */
-}
-=======
   margin-top: 5px;
 
 }
 
->>>>>>> 87ea621d35a24aaf092bd31379e48f5ae20c7e74
 .signin-forgot-password {
   font-size: 12px;
   font-style: italic;
@@ -103,9 +80,6 @@ background-color: rgb(238, 237, 237);
 .signin-image {
   margin: 150px;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 1227px) {
-=======
 
 .error{
   font-style: italic;
@@ -116,7 +90,6 @@ background-color: rgb(238, 237, 237);
 
 }
 @media screen and (max-width: 1000px) {
->>>>>>> 87ea621d35a24aaf092bd31379e48f5ae20c7e74
   .signin-image-div {
     display: none;
     
